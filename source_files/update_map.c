@@ -9,9 +9,7 @@ static void	update_game_status(t_mlx *mlx, int x, int y)
 
 static int	save_new_position(t_mlx *mlx, int x, int y)
 {
-	if ((mlx->map_grid)[mlx->game.y + y][mlx->game.x + x] == '1')
-		return (0);
-	else if ((mlx->map_grid)[mlx->game.y + y][mlx->game.x + x] == '0')
+	if ((mlx->map_grid)[mlx->game.y + y][mlx->game.x + x] == '0')
 	{
 		(mlx->map_grid)[mlx->game.y + y][mlx->game.x + x] = 'P';
 		(mlx->map_grid)[mlx->game.y][mlx->game.x] = '0';
