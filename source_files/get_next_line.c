@@ -34,7 +34,7 @@ int	count_lines(char *map_file)
 	int		fd;
 
 	n_lines = 0;
-	open(map_file, O_RDONLY);
+	fd = open(map_file, O_RDONLY);
 	while (read(fd, buf, 1))
 	{
 		if (buf[0] == '\n')

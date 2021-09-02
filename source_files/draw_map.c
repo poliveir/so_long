@@ -67,7 +67,6 @@ void	draw_map(t_mlx *mlx)
 {
 	int	i;
 	int	j;
-	int	color;
 
 	build_grid(mlx);
 	j = 0;

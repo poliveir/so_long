@@ -36,8 +36,6 @@ static int	save_new_position(t_mlx *mlx, int x, int y)
 
 static int	update_grid(t_mlx *mlx)
 {
-	int		x;
-	int		y;
 	int		x_move;
 	int		y_move;
 
@@ -58,7 +56,6 @@ void	update_map(t_mlx *mlx)
 {
 	int	i;
 	int	j;
-	int	color;
 
 	if (!(update_grid(mlx)))
 		return ;

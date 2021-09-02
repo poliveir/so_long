@@ -17,9 +17,9 @@ void	error_args(int error_nbr)
 	exit (0);
 }
 
-void	error_reading(t_list *map, int error_nbr)
+void	error_reading(t_list **map, int error_nbr)
 {
-	ft_lstclear(&map, free);
+	ft_lstclear(map, free);
 	map = NULL;
 	printf("%s[ERROR]%s ", RED, NORMAL);
 	if (error_nbr == 0)
