@@ -79,7 +79,7 @@ typedef struct s_mlx
 
 void	error_args(int error_nbr);
 
-void	error_reading(t_list *map, int error_nbr);
+void	error_reading(t_list **map, int error_nbr);
 
 void	args_check(int argc, char **argv);
 

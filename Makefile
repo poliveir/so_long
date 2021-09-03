@@ -22,7 +22,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 
-	$(CC) $(SRCS) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $(NAME)
+	$(CC) $(SRCS) $(CFLAGS) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	rm -rf *.o $(SRCS_DIR)/*.o
